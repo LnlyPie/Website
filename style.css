@@ -22,6 +22,16 @@ h2 {
     color: rgb(255, 255, 255);
 }
 
+h4 {
+    font-family: 'Spectral', serif;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    font-family: 'Spectral', serif;
+    color: rgb(255, 255, 255);
+}
+
 .center {
     text-align: center;
     margin: auto;
