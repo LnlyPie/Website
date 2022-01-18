@@ -1,6 +1,8 @@
 body {
-    background-color: rgb(31, 31, 31);
+    background-color: rgb(39, 39, 39);
 }
+
+/* text */
 
 h1 {
     color: rgb(153, 81, 201);
@@ -10,7 +12,7 @@ h1 {
 }
 
 h1.bigtext {
-    color: rgb(99, 0, 165);
+    color: rgb(115, 0, 192);
     font-family: 'Exo 2', sans-serif;
     font-size: 60px;
 }
@@ -26,18 +28,26 @@ h2 {
     padding: 10px;
 }
 
-.column {
+/* end of text */
+
+/* columns */
+
+.column3 {
     float: left;
     width: 33.33%;
 }
 
-.row:after {
+.row3:after {
     content: "";
     display: table;
     clear: both;
 }
 
-a {
+/* end of columns */
+
+/* a link decoration */
+
+a.link {
     display: inline-block;
     position: relative;
     text-decoration: none;
@@ -45,7 +55,7 @@ a {
     z-index: 1;
 }
   
-a::after {
+a.link::after {
     content: '';
     position: absolute;
     left: 0;
@@ -57,20 +67,52 @@ a::after {
     transition: height .25s cubic-bezier(.6,0,.4,1);
 }
   
-a:hover::after {
+a.link:hover::after {
     height: .3em;
 }
 
+.button {
+    background-color: rgb(105, 0, 175);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: rgb(82, 0, 136);
+}
+
+/* end of a link decoration */
+
+div.game {
+    display: inline-block;
+}
+
+img.gameimg {
+    width: 200px;
+    height: 150px;
+}
+
+/* Media */
 @media screen and (max-width: 680px) {
     h1 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     h1.bigtext {
-        font-size: 45px;
+        font-size: 40px;
     }
 
-    .column {
+    .column3 {
       width: 100%;
+    }
+
+    img.gameimg {
+        width: 100px;
+        height: 70px;
     }
 }
