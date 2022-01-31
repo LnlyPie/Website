@@ -1,0 +1,75 @@
+body {
+  background-color: rgb(0, 119, 255);
+}
+
+.center {
+  text-align: center;
+}
+
+.centerer {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: rgb(228, 95, 95);
+  font-size: 30px;
+  font-family: 'Spectral', serif;
+}
+
+h2.notready {
+  border: 5px solid rgb(238, 8, 0);
+  border-radius: 5px;
+  font-size: 25px;
+  color: rgb(238, 8, 0);
+}
+
+/* Cards Menu */
+
+.cardHome {
+  transform: rotateY(0deg) rotate(-30deg);
+}
+
+.cardHome:hover {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(255, 243, 0, 0.67);
+  -moz-box-shadow:    0px 0px 10px 0px rgba(255, 243, 0, 0.67);
+  box-shadow:         0px 0px 10px 0px rgba(255, 243, 0, 0.67);
+}
+
+.cardAbout:hover {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(172, 50, 50, 0.67);
+  -moz-box-shadow:    0px 0px 10px 0px rgba(172, 50, 50, 0.67);
+  box-shadow:         0px 0px 10px 0px rgba(172, 50, 50, 0.67);
+}
+
+.cardShots {
+  transform: rotateY(0deg) rotate(30deg);
+}
+
+.cardShots:hover {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(99, 155, 255, 0.67);
+  -moz-box-shadow:    0px 0px 10px 0px rgba(99, 155, 255, 0.67);
+  box-shadow:         0px 0px 10px 0px rgba(99, 155, 255, 0.67);
+}
+
+.card {
+  width: 64;
+  height: 86;
+  transition: transform .2s;
+}
+
+.card:hover {
+  transform: scale(1.5);
+}
