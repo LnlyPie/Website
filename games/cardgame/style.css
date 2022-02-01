@@ -22,7 +22,6 @@ h1 {
 
 h2.notready {
   border: 5px solid rgb(238, 8, 0);
-  border-radius: 5px;
   font-size: 25px;
   color: rgb(238, 8, 0);
 }
@@ -79,13 +78,19 @@ h2.notready {
 
 @media screen and (max-width: 680px) {
   h1 {
-    color: rgb(228, 95, 95);
-    font-size: 40px;
-    font-family: 'Spectral', serif;
+    font-size: 55px;
+  }
+
+  h2.notready {
+    font-size: 35px;
   }
 
   .card {
-    width: 64px;
-    height: 86px;
+    width: 86px;
+    height: 108px;
+  }
+
+  .card:hover {
+    transform: scale(1.3);
   }
 }
