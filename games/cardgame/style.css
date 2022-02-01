@@ -78,16 +78,11 @@ h2.notready {
 
 @media screen and (max-width: 680px) {
   h1 {
-    font-size: 55px;
+    font-size: 25px;
   }
 
   h2.notready {
-    font-size: 35px;
-  }
-
-  .card {
-    width: 86px;
-    height: 108px;
+    font-size: 17px;
   }
 
   .card:hover {
