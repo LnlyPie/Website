@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(0, 119, 255);
+  background-color: rgb(34, 34, 34);
 }
 
 .center {
@@ -15,7 +15,7 @@ a {
 }
 
 h1 {
-  color: rgb(228, 95, 95);
+  color: rgb(95, 212, 228);
   font-size: 30px;
   font-family: 'Spectral', serif;
 }
@@ -29,6 +29,16 @@ h2.notready {
 
 /* Cards Menu */
 
+.card {
+  width: 64px;
+  height: 86px;
+  transition: transform .2s;
+}
+
+.card:hover {
+  transform: scale(1.5);
+}
+
 .cardHome {
   transform: rotateY(0deg) rotate(-30deg);
 }
@@ -37,18 +47,18 @@ h2.notready {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(255, 243, 0, 0.67);
-  -moz-box-shadow:    0px 0px 10px 0px rgba(255, 243, 0, 0.67);
-  box-shadow:         0px 0px 10px 0px rgba(255, 243, 0, 0.67);
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(255, 243, 0, 0.67);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(255, 243, 0, 0.67);
+  box-shadow: 0px 0px 30px 0px rgba(255, 243, 0, 0.67);
 }
 
 .cardAbout:hover {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(172, 50, 50, 0.67);
-  -moz-box-shadow:    0px 0px 10px 0px rgba(172, 50, 50, 0.67);
-  box-shadow:         0px 0px 10px 0px rgba(172, 50, 50, 0.67);
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(172, 50, 50, 0.67);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(172, 50, 50, 0.67);
+  box-shadow: 0px 0px 30px 0px rgba(172, 50, 50, 0.67);
 }
 
 .cardShots {
@@ -59,17 +69,23 @@ h2.notready {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(99, 155, 255, 0.67);
-  -moz-box-shadow:    0px 0px 10px 0px rgba(99, 155, 255, 0.67);
-  box-shadow:         0px 0px 10px 0px rgba(99, 155, 255, 0.67);
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(99, 155, 255, 0.67);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(99, 155, 255, 0.67);
+  box-shadow: 0px 0px 30px 0px rgba(99, 155, 255, 0.67);
 }
 
-.card {
-  width: 64;
-  height: 86;
-  transition: transform .2s;
-}
 
-.card:hover {
-  transform: scale(1.5);
+/* Media */
+
+@media screen and (max-width: 680px) {
+  h1 {
+    color: rgb(228, 95, 95);
+    font-size: 40px;
+    font-family: 'Spectral', serif;
+  }
+
+  .card {
+    width: 64px;
+    height: 86px;
+  }
 }
