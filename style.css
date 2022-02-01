@@ -86,8 +86,6 @@ a.link:hover::after {
 
 .button:hover {
     background-color: rgb(82, 0, 136);
-    transform: rotate(25deg) scale(1.17);
-    transition: transform .8s ease-in-out;
 }
 
 /* end of a link decoration */
