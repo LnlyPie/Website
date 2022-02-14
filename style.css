@@ -108,41 +108,6 @@ div.game {
     height: 150px;
 }
 
-img.gameimg-main {
-    z-index: 2;
-}
-
-div.cardgameimg {
-    position: relative;
-}
-div.cardgameimg img.gameimg-hover {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    object-fit: contain;
-    opacity: 0;
-    transition: opacity .2s;
-}
-
-img.cardgameimg1-hover {
-    transform: rotateY(0deg) rotate(-30deg);
-    left: 0;
-    z-index: 1;
-}
-img.cardgameimg2-hover {
-    transform: rotateY(0deg) rotate(30deg);
-    left: 5;
-    z-index: 1;
-}
-
-div.cardgameimg:hover img.cardgameimg1-hover {
-    opacity: 1;
-}
-div.cardgameimg:hover img.cardgameimg2-hover {
-    opacity: 1;
-}
-
 img.cardgameimg {
     width: 115px;
     height: 150px;
