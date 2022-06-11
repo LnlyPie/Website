@@ -1,25 +1,25 @@
 body {
-    background-color: rgb(39, 39, 39);
+    background-color: rgb(22, 22, 22);
 }
 
 /* text */
 
 h1 {
-    color: rgb(153, 81, 201);
-    font-size: 30px;
+    color: rgb(187, 169, 161);
+    font-size: 25px;
     font-family: 'Spectral', serif;
     text-align: center;
 }
 
 h1.bigtext {
-    color: rgb(115, 0, 192);
+    color: rgb(143, 113, 99);
     font-family: 'Exo 2', sans-serif;
-    font-size: 60px;
+    font-size: 55px;
 }
 
 h2, h4, p {
     font-family: 'Spectral', serif;
-    color: rgb(255, 255, 255);
+    color: rgb(117, 117, 117);
     text-align: center;
 }
 
@@ -87,7 +87,7 @@ a.link:hover::after {
 }
 
 .button {
-    background-color: rgb(105, 0, 175);
+    background-color: rgb(175, 105, 0);
     border: none;
     color: white;
     padding: 15px 32px;
@@ -98,7 +98,7 @@ a.link:hover::after {
 }
 
 .button:hover {
-    background-color: rgb(82, 0, 136);
+    background-color: rgb(155, 93, 0);
 }
 
 /* end of a link decoration */
@@ -107,22 +107,48 @@ div.game {
     display: inline-block;
 }
 
-.gameimg {
-    width: 200px;
-    height: 150px;
+img.game {
+    width: 132px;
+    height: 132px;
 }
 
-img.cardgameimg {
-    width: 115px;
-    height: 150px;
+img.logo {
+    width: 200px;
+    height: 200px;
 }
 
 a {
     text-decoration: none;
 }
 
+/* nav */
+
+.nav {
+    background-color: rgb(51, 51, 51);
+    overflow: hidden;
+}
+
+.nav a {
+    float: left;
+    color: rgb(143, 113, 99);
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav a:hover {
+    background-color: rgb(221, 221, 221);
+    color: rgb(0, 0, 0);
+}
+
+.nav a.active {
+    background-color: rgb(143, 113, 99);;
+    color: rgb(255, 255, 255);
+}
+
 /* Media */
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 1000px) {
     h1 {
         font-size: 25px;
     }
@@ -139,9 +165,14 @@ a {
         width: 100%;
     }
 
-    img.gameimg {
+    img.game {
+        width: 66px;
+        height: 66px;
+    }
+
+    img.logo {
         width: 100px;
-        height: 70px;
+        height: 100px;
     }
 }
 
