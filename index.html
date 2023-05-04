@@ -1,105 +1,78 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>LonelyPie - Home</title>
-        <link rel="stylesheet" href="style.css">
-
+        <title>LonelyPie Studio - Home</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="LonelyPie, Studio, Indie, Games, Evie">
+        <meta name="description" content="A Small Indie Game Studio">
+        <meta name="author" content="LonelyPie">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap" rel="stylesheet">
-
-        <meta name="keywords" content="AndusDEV, Andus, ParadoxStudio, Paradox, LonelyPie, Lonely Pie">
-        <meta name="description" content="Homepage of LonelyPie">
-        <meta name="author" content="Andus">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="LonelyPie"/>
-        <meta property="og:description" content="Homepage"/>
-        <meta property="og:url" content="https://lpie.andus.dev"/>
+        <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <div class="nav">
-            <a href="/"><img class="logo" src="/imgs/logo.png"></a>
-            <a href="/team">Team</a>
-        </div>
-        <div class="main" id="main">
-            <div id="hello">
-                <h1 class="bigtext">LonelyPie</h1>
-                <h2>Average Indie Game Studio (just better)</h2>
-            </div>
+        <nav>
+            <ul class="left-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#team">Team</a></li>
+            </ul>
+            <ul class="right-menu">
+                <li class="social"><a title="Documentation" href="https://docs.lonelypie.net"><i class="bi bi-file-text-fill"></i></a></li>
+                <li class="social"><a title="Discord Server" href="https://discord.lonelypie.net"><i class="bi bi-discord"></i></a></li>
+                <li class="social"><a title="Youtube Channel" href="https://yt.lonelypie.net"><i class="bi bi-youtube"></i></a></li>
+                <li class="social"><a title="Instagram" href="https://ig.lonelypie.net"><i class="bi bi-instagram"></i></a></li>
+                <li class="social"><a title="Subreddit" href="https://reddit.lonelypie.net"><i class="bi bi-reddit"></i></a></li>
+            </ul>
+        </nav>
 
-            <div id="ourgames">
-                <h1>Our Games:</h1>
-                <div id="games" class="center">
-                    <div class="game">
-                        <iframe src="https://widgets.gamejolt.com/package/v1?key=cNDw4ptA&theme=light" frameborder="0" width="400" height="245"></iframe>
-                    </div>
+        <section id="home">
+            <a class="center" href="/"><img alt="LonelyPie Logo" class="logo" src="imgs/logo.png"></a>
+            <h1>LonelyPie Studio</h1>
+            <h2>A Small Indie Game Studio</h2>
+        </section>
+    
+        <section id="games">
+            <h2>Our Latest Games</h2>
+            <div>
+                <div class="game">
+                    <img class="center" src="https://raw.githubusercontent.com/LnlyPie/Evie/main/icon.png" alt="Evie - A top-down adventure game">
+                    <h3>Evie</h3>
+                    <h4>An upcoming top-down adventure game</h4>
+                    <h4>Download Links:</h4>
+                    <a title="PC" class="os center" href="https://github.com/LnlyPie/Evie/releases/latest"><i class="bi bi-pc-display"></i> Windows, Linux, MacOS</a>
+                    <a title="Switch" class="os center" href="https://github.com/LnlyPie/Evie-Homebrew-Ports/releases/latest"><i class="bi bi-nintendo-switch"></i> Nintendo Switch (Modded)</a>
+                    <a title="Vita" class="os center" href="https://vitadb.rinnegatamante.it/#/info/1053"><i class="bi bi-playstation"></i> Playstation Vita (Modded)</a>
                 </div>
             </div>
+        </section>
 
-            <div id="tools">
-                <h1>Tools we use:</h1>
-                <h2>We use tools you're already familliar with!</h2>
-                <div class="center row3">
-                    <div id="engine-godot" class="column3">
-                        <a href="https://godotengine.org/">
-                            <img src="./imgs/tools/godot_monochrome_logo.png" height="75"/>
-                            <h2>Godot</h2>
-                        </a>
-                    </div>
-                    <div id="art-libresprite" class="column3">
-                        <a href="https://libresprite.github.io/">
-                            <img src="./imgs/tools/libresprite_logo_normal.png" height="75" />
-                            <h2>LibreSprite</h2>
-                        </a>
-                    </div>
-                    <div id="patchkit" class="column3">
-                        <a href="https://patchkit.net/">
-                            <img src="./imgs/tools/patchkit_logo.png" height="75" />
-                            <h2>PatchKit</h2>
-                        </a>
-                    </div>
+        <section id="team">
+            <div class="row">
+                <h2>Team:</h2>
+                <div class="column">
+                    <h3>Developers:</h3>
+                    <h4>Andus</h4>
+                </div>
+                <div class="column">
+                    <h3>Artists:</h3>
+                    <h4>Creta</h4>
+                    <h4>ah</h4>
+                </div>
+                <div class="column">
+                    <h3>Story Writers:</h3>
+                    <h4>LucePric</h4>
                 </div>
             </div>
+        </section>
 
-            <div id="reasonswhy">
-                <h1>Why us?</h1>
-                <div class="row3">
-                    <!-- Our Games are (will be) Free -->
-                    <div id="rfree" class="column3">
-                        <h1><a class="link" href="https://www.gnu.org/philosophy/free-sw.html">Free As In Freedom</a></h1>
-                        <h2>We aim to create a complete and free games. Even better.
-                            All the content in our games (textures, etc.) can be used by you in any way you want.
-                            Just give us some credit ;).</h2>
-                    </div>
-                    <!-- Our Games are (will be) Open Source -->
-                    <div id="ropensource" class="column3">
-                        <h1><a class="link" href="https://opensource.org/osd">Open Source</a></h1>
-                        <h2>All of our games are Open Source.
-                            That means you can change in them anything you want.
-                            Well... Anything that's legal.
-                            Just follow the <a class="link" href="https://opensource.org/licenses">License</a> restrictions and you'll be fine.
-                            Most of our games use the <a class="link" href="https://choosealicense.com/licenses/gpl-3.0/">GNU GPL v3 License</a>.</h2>
-                    </div>
-                    <!-- We're trying to build community -->
-                    <div id="rcommunity" class="column3">
-                        <h1>Building a Community</h1>
-                        <h2>We try to build a Coummunity. If you want to help, 
-                            just join our <a class="link" href="https://discord.gg/Jc22Ty7trq">Discord</a> and be yourself.
-                            We accept everyone here.
-                            (just follow the rules please).</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <footer>
+            <p class="center">&copy; 2023 LonelyPie Studio. All pies reserved.</p>
+        </footer>
     </body>
-    <footer>
-        <br><br>
-        <h2 class="footer"><a class="link" href="https://github.com/PrdxStudio/website">Website Source Code</a></h2>
-        <h2 class="footer"><a class="link" href="https://discord.gg/Jc22Ty7trq">Discord</a> <a class="link" href="https://github.com/PrdxStudio">GitHub</a></h2>
-    </footer>
 </html>
