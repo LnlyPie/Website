@@ -42,6 +42,7 @@ img.logo {
     height: 96px;
 }
 
+/* Columns */
 .column {
     float: left;
     width: 33.33%;
@@ -50,6 +51,11 @@ img.logo {
     content: "";
     display: table;
     clear: both;
+}
+
+.column2 {
+    float: left;
+    width: 50%;
 }
 
 /* Links */
